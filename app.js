@@ -14,6 +14,8 @@ var contactSchema = new mongoose.Schema({
 	name: String,
 	date: String,
 	coach: Boolean,
+	telephone: String,
+	email: String,
 	message: String
 });
 var Contact = mongoose.model("Contact", contactSchema);
