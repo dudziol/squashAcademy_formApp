@@ -9,11 +9,21 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+// MONGOOSE/MODEL/ CONFIG
+var contactSchema = new mongoose.Schema({
+	name: String,
+	date: String,
+	coach: Boolean,
+	message: String
+});
+var Contact = mongoose.model("Contact", contactSchema);
+
 // INDEX ROUTE
 app.get("/", function(req, res){
 	res.render("index");
 })
 
+// CREATE ROUTE
 app.post("/", function(req, res){
 	res.redirect("/");
 })
