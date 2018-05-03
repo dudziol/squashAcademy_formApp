@@ -2,12 +2,14 @@ var express = require("express"),
 	app = express(),
 	mongoose = require("mongoose"),
 	bodyParser = require("body-parser");
+	expressSanitizer = require("express-sanitizer")
 
 // APP CONFIG
 mongoose.connect("mongodb://localhost/academyForm");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+app.use(expressSanitizer());
 
 // MONGOOSE/MODEL/ CONFIG
 var contactSchema = new mongoose.Schema({
@@ -27,6 +29,7 @@ app.get("/", function(req, res){
 
 // CREATE ROUTE
 app.post("/", function(req, res){
+	
 	res.redirect("/");
 })
 

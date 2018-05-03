@@ -10,30 +10,30 @@
 			<form action="/" method="POST">
 				<div class="form-group">
 					<label>Imię i nazwisko</label>
-					<input type="text" class="form-control" name="name" placeholder="Imię i nazwisko">
+					<input type="text" class="form-control" name="contact[name]" placeholder="Imię i nazwisko">
 				</div>
 				<div class="form-group">
 					<label>Termin</label>
-					<input class="form-control" name="date" type="date">
+					<input class="form-control" name="contact[date]" type="date">
 				</div>
 				<div class="form-group">
 					<label>Trener</label>
-					<select class="form-control" name="coach">
+					<select class="form-control" name="contact[coach]">
 						<option value="">Ania</option>
 						<option value="">Kamil</option>
 					</select>
 				</div>
 				<div class="form-group" style="display: inline-block;">
 					<label>Nr. telefonu</label>
-					<input class="form-control" name="telephone" style="width: auto;" type="tel">
+					<input class="form-control" name="contact[telephone]" style="width: auto;" type="tel">
 				</div>	
 				<div class="form-group" style="display: inline-block;">
 					<label>Email</label>
-					<input class="form-control" name="email" style="width: auto;" type="email">
+					<input class="form-control" name="contact[email]" style="width: auto;" type="email">
 				</div>
 				<div class="form-group">
 					<label>Wiadomość</label>
-					<textarea class="form-control" name="message" placeholder="Wiadomość">
+					<textarea class="form-control" name="contact[message]" placeholder="Wiadomość">
 					</textarea>
 				</div>
 				<div class="form-group">
