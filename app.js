@@ -15,7 +15,7 @@ app.use(expressSanitizer());
 var contactSchema = new mongoose.Schema({
 	name: String,
 	date: String,
-	coach: Boolean,
+	coach: String,
 	telephone: String,
 	email: String,
 	message: String
@@ -29,9 +29,15 @@ app.get("/", function(req, res){
 
 // CREATE ROUTE
 app.post("/", function(req, res){
-	
-	res.redirect("/");
-})
+	req.body.contact.body = req.sanitize(req.body.contact.body);
+	Contact.create(req.body.contact, function(err, newContact){
+		if(err){
+			res.render("index");
+		} else {
+			res.redirect("/");
+		};
+	});
+});
 
 // REDIRECT to INDEX
 app.get("/:id", function(req, res){
