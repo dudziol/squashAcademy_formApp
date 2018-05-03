@@ -1,1 +1,38 @@
-"#" 
+@font-face{
+	font-family: "riffic";
+	src: url(assets/RifficFree-Bold.ttf);
+}
+
+.navbar-brand{
+	font-family: riffic;
+	color: black;
+}
+
+#brand{
+	color: black;
+}
+
+.brandChar{
+	color: #B71817;
+}
+
+.fa-facebook-f{
+	color: #B71817;
+}
+
+#navbar{
+	margin-bottom: 0px;
+}
+
+h1{
+	font-family: riffic;
+	color: black;
+}
+
+.jumbotron{
+	text-align: center;
+	background-image: url(assets/jumbo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 25% 15%;
+}

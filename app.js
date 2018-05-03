@@ -1,4 +1,5 @@
-var app = require("express")(),
+var express = require("express"),
+	app = express(),
 	mongoose = require("mongoose"),
 	bodyParser = require("body-parser");
 
@@ -6,6 +7,7 @@ var app = require("express")(),
 mongoose.connect("mongodb://localhost/academyForm");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
 
 app.get("/", function(req, res){
 	res.render("index");
