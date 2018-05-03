@@ -3,7 +3,7 @@
 tasks:
 
 - add grid to form + make a second half: avatars with contact info
-- functionality: send mail with data received from html form
+- functionality: send mail with data received from html form - DONE
 - add grid with pictures and maybe little bio?
 - refactor jumbotron
 - add offert section? and description section
