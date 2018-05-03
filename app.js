@@ -14,6 +14,10 @@ app.get("/", function(req, res){
 	res.render("index");
 })
 
+app.post("/", function(req, res){
+	res.redirect("/");
+})
+
 // REDIRECT to INDEX
 app.get("/:id", function(req, res){
 	res.redirect("/");
