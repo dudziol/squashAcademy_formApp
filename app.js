@@ -9,8 +9,14 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+// INDEX ROUTE
 app.get("/", function(req, res){
 	res.render("index");
+})
+
+// REDIRECT to INDEX
+app.get("/:id", function(req, res){
+	res.redirect("/");
 })
 
 app.listen(3000, function(){
