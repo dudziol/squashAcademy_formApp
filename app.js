@@ -29,14 +29,15 @@ app.get("/", function(req, res){
 
 // CREATE ROUTE
 app.post("/", function(req, res){
-	req.body.contact.body = req.sanitize(req.body.contact.body);
-	Contact.create(req.body.contact, function(err, newContact){
-		if(err){
-			res.render("index");
-		} else {
-			res.redirect("/");
-		};
-	});
+	// req.body.contact.body = req.sanitize(req.body.contact.body);
+	// Contact.create(req.body.contact, function(err, newContact){
+	// 	if(err){
+	// 		res.render("index");
+	// 	} else {
+	// 		res.redirect("/");
+	// 	};
+	// });
+	res.redirect("/");
 });
 
 // REDIRECT to INDEX

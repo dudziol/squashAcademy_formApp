@@ -10,26 +10,27 @@
 			<form action="/" method="POST">
 				<div class="form-group">
 					<label>Imię i nazwisko</label>
-					<input type="text" class="form-control" name="contact[name]" placeholder="Imię i nazwisko">
+					<input type="text" class="form-control" name="contact[name]" placeholder="Imię i nazwisko" required>
 				</div>
 				<div class="form-group">
 					<label>Termin</label>
-					<input class="form-control" name="contact[date]" type="date">
+					<input class="form-control" required name="contact[date]" type="date">
 				</div>
 				<div class="form-group">
 					<label>Trener</label>
 					<select class="form-control" name="contact[coach]">
+						<option value="" selected></option>
 						<option value="Ania">Ania</option>
 						<option value="Kamil">Kamil</option>
 					</select>
 				</div>
 				<div class="form-group" style="display: inline-block;">
 					<label>Nr. telefonu</label>
-					<input class="form-control" name="contact[telephone]" style="width: auto;" type="tel">
+					<input class="form-control" required name="contact[telephone]" style="width: auto;" type="tel">
 				</div>	
 				<div class="form-group" style="display: inline-block;">
 					<label>Email</label>
-					<input class="form-control" name="contact[email]" style="width: auto;" type="email">
+					<input class="form-control" name="contact[email]" style="width: auto;" type="email" required>
 				</div>
 				<div class="form-group">
 					<label>Wiadomość</label>
