@@ -36,3 +36,31 @@ h1{
 	background-repeat: no-repeat;
 	background-position: 25% 15%;
 }
+#avatar_ann {
+    background-image: url(https://secure.gravatar.com/avatar/5f7454b8c029fba3e676cf9a1a1ccb27?d=https://www.forum.optymalizacja.com/uploads/monthly_2017_09/B.png.45ce5c3b502f500aa4dcbac72cbd47b5.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+#avatar_kamil {
+    background-image: url(https://secure.gravatar.com/avatar/5f7454b8c029fba3e676cf9a1a1ccb27?d=https://www.forum.optymalizacja.com/uploads/monthly_2017_09/B.png.45ce5c3b502f500aa4dcbac72cbd47b5.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+.gridMargin{
+	margin-top: 90px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+}
+
+.someth{
+
+}
