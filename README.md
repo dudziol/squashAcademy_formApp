@@ -12,3 +12,6 @@ tasks:
 - functionality: moving to section from navbar
 - add fb and insta to contact
 - create footer
+- create mail template
+- db cleaning
+- Jasmine
