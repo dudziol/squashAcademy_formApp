@@ -32,11 +32,11 @@ h1{
 .jumbotron{
 	text-align: center;
 	background-image: url(assets/jumbo.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 15%;
 	background-size: 1298.75px 865.75px;
 	max-width: 100%;
+	/*margin-bottom: 0;*/
 }
 .avatar{
 	width: 150px;
@@ -63,4 +63,18 @@ h1{
 .contactDisplay{
 	display: table;
 	margin: 0 auto;
+}
+
+.inner{
+	border: solid 1px black;
+	height: auto;
+}
+.desc{
+	font-family: riffic;
+	font-size: 20px;
+}
+.line{
+	width: 100%;
+	background-color: red;
+	height: 50px;
 }
