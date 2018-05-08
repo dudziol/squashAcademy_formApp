@@ -34,7 +34,7 @@ h1{
 	background-image: url(../img/jumbo.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 15%;
-	background-size: 1298.75px 865.75px;
+	background-size: cover;
 	max-width: 100%;
 }
 .avatar{
@@ -63,11 +63,6 @@ h1{
 	display: table;
 	margin: 0 auto;
 }
-
-.inner{
-	border: solid 1px black;
-	height: auto;
-}
 .desc{
 	font-family: riffic;
 	font-size: 20px;
@@ -85,4 +80,21 @@ h1{
 	background-position: 50%;
 	width: 100%;
 	height: 250px;
+}
+
+.coach_border{
+	border: solid 1px black;
+}
+
+#ann_coach{
+	background-image: url(../img/ania.jpg);
+	height: 1000px;
+	background-size: 1072px 1608px;
+	background-repeat: no-repeat;
+}
+#kamil_coach{
+	background-image: url(../img/kamil.jpg);
+	height: 1000px;
+	background-size: 1072px 1608px;
+	background-repeat: no-repeat;
 }
