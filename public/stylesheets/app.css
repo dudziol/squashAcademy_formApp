@@ -31,12 +31,11 @@ h1{
 
 .jumbotron{
 	text-align: center;
-	background-image: url(assets/jumbo.jpg);
+	background-image: url(../img/jumbo.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 15%;
 	background-size: 1298.75px 865.75px;
 	max-width: 100%;
-	/*margin-bottom: 0;*/
 }
 .avatar{
 	width: 150px;
@@ -77,4 +76,13 @@ h1{
 	width: 100%;
 	background-color: red;
 	height: 50px;
+}
+
+.brandLogo{
+	background-image: url(http://squashfit.pl/wp-content/uploads/2016/05/mucha.jpg);
+	background-repeat: no-repeat;
+	background-size: 175px 248px;
+	background-position: 50%;
+	width: 100%;
+	height: 250px;
 }
