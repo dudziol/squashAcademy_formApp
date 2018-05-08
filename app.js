@@ -10,7 +10,7 @@ var express = require("express"),
 // Data and params creation for email message
 function createMailData(formData){
 	if(formData.coach === "Kamil"){
-		return {text: formData, adress: process.env.ADRESS_K, subject: 'Nowe zgłoszenie!'};
+		return {text: JSON.stringify(formData), adress: process.env.ADRESS_K, subject: 'Nowe zgłoszenie!'};
 	} else {
 		return {text: JSON.stringify(formData), adress: process.env.ADRESS_A, subject: 'Nowe zgłoszenie!'};
 	}

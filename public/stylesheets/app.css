@@ -36,28 +36,31 @@ h1{
 	background-repeat: no-repeat;
 	background-position: 50% 15%;
 	background-size: 1298.75px 865.75px;
+	max-width: 100%;
 }
-#avatar_ann {
-    background-image: url(https://secure.gravatar.com/avatar/5f7454b8c029fba3e676cf9a1a1ccb27?d=https://www.forum.optymalizacja.com/uploads/monthly_2017_09/B.png.45ce5c3b502f500aa4dcbac72cbd47b5.png);
-    width: 150px;
+.avatar{
+	width: 150px;
     height: 150px;
     background-size: cover;
     background-position: top center;
     border-radius: 50%;
-    margin: 50px auto;
+    margin: 0 auto;
 }
-#avatar_kamil {
+#ann {
     background-image: url(https://secure.gravatar.com/avatar/5f7454b8c029fba3e676cf9a1a1ccb27?d=https://www.forum.optymalizacja.com/uploads/monthly_2017_09/B.png.45ce5c3b502f500aa4dcbac72cbd47b5.png);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: top center;
-    border-radius: 50%;
-    margin: 50px auto;
+   
 }
-
-.gridMargin{
-	margin-top: 90px;
-	margin-bottom: 50px;
-	margin-left: 100px;
+#kamil {
+    background-image: url(https://secure.gravatar.com/avatar/5f7454b8c029fba3e676cf9a1a1ccb27?d=https://www.forum.optymalizacja.com/uploads/monthly_2017_09/B.png.45ce5c3b502f500aa4dcbac72cbd47b5.png);
+}
+.spacingRow{
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+.spacingCol{
+	margin-top: 40px;
+}
+.contactDisplay{
+	display: table;
+	margin: 0 auto;
 }
